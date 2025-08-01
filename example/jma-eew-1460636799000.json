@@ -1,160 +1,160 @@
 {
-    "schema": {
-        "identifier": "im.seis.schema.eew",
-        "version": "0.0.1"
+  "schema": {
+    "identifier": "im.seis.schema.eew",
+    "version": "0.0.1"
+  },
+  "report": {
+    "serial": 2,
+    "isCancel": false,
+    "isDrill": false,
+    "isExercise": false,
+    "isWarning": false,
+    "isFinal": false,
+    "issuer": {
+      "agency": {
+        "code": 4,
+        "name": "大阪管区気象台"
+      },
+      "system": {
+        "code": null,
+        "name": "緊急地震速報"
+      }
     },
-    "report": {
-        "serial": 2,
-        "isCancel": false,
-        "isDrill": false,
-        "isExercise": false,
-        "isWarning": false,
-        "isFinal": false,
-        "issuer": {
-            "agency": {
-                "code": 4,
-                "name": "大阪管区気象台"
-            },
-            "system": {
-                "code": null,
-                "name": "緊急地震速報"
-            }
-        },
-        "time": "1460636799000"
-    },
-    "earthquake": {
-        "id": "20160414212638",
-        "time": "1460636796000",
-        "hypocenter": {
-            "isEstimate": true,
-            "place": {
-                "code": 741,
-                "name": "熊本県熊本地方",
-                "landOrSea": "unknown"
-            },
-            "location": {
-                "latitude": 32.9,
-                "longitude": 130.7,
-                "depth": 10
-            },
-            "magnitude": [
-                {
-                    "identifier": "im.seis.magnitude.jma.mj",
-                    "value": 1
-                }
-            ]
-        },
-        "maxIntensity": {
-            "from": [
-                {
-                    "identifier": "im.seis.intensity.jma.shindo",
-                    "value": "4"
-                }
-            ],
-            "to": [
-                {
-                    "identifier": "im.seis.intensity.jma.shindo",
-                    "value": "4"
-                }
-            ]
-        },
-        "estimatedIntensity": [
-            {
-                "location": {
-                    "type": "area",
-                    "code": 741,
-                    "name": "熊本県熊本"
-                },
-                "intensity": {
-                    "from": [
-                        {
-                            "identifier": "im.seis.intensity.jma.shindo",
-                            "value": "不明"
-                        }
-                    ],
-                    "to": [
-                        {
-                            "identifier": "im.seis.intensity.jma.shindo",
-                            "value": "4"
-                        }
-                    ]
-                },
-                "arrival": {
-                    "time": "1460636799000",
-                    "status": {
-                        "code": 9,
-                        "value": "主要動到達時刻の予測なし（PLUM法による予測）"
-                    }
-                },
-                "isWarning": false
-            },
-            {
-                "location": {
-                    "type": "area",
-                    "code": 743,
-                    "name": "熊本県天草・芦北"
-                },
-                "intensity": {
-                    "from": [
-                        {
-                            "identifier": "im.seis.intensity.jma.shindo",
-                            "value": "不明"
-                        }
-                    ],
-                    "to": [
-                        {
-                            "identifier": "im.seis.intensity.jma.shindo",
-                            "value": "4"
-                        }
-                    ]
-                },
-                "arrival": {
-                    "time": "1460636799000",
-                    "status": {
-                        "code": 9,
-                        "value": "主要動到達時刻の予測なし（PLUM法による予測）"
-                    }
-                },
-                "isWarning": false
-            }
-        ]
-    },
-    "accuracy": [
+    "time": 1460636799000
+  },
+  "earthquake": {
+    "id": "20160414212638",
+    "time": 1460636796000,
+    "hypocenter": {
+      "isEstimate": true,
+      "place": {
+        "code": 741,
+        "name": "熊本県熊本地方",
+        "landOrSea": "unknown"
+      },
+      "location": {
+        "latitude": 32.9,
+        "longitude": 130.7,
+        "depth": 10
+      },
+      "magnitude": [
         {
-            "type": "release",
-            "path": "$.earthquake.hypocenter.place.value",
-            "method": {
-                "code": 1,
-                "value": "P波/S波レベル越え、IPF法（1点）、または仮定震源要素"
-            }
-        },
-        {
-            "type": "release",
-            "path": "$.earthquake.hypocenter.location.depth",
-            "method": {
-                "code": 1,
-                "value": "P波/S波レベル越え、IPF法（1点）、または仮定震源要素"
-            }
-        },
-        {
-            "type": "release",
-            "path": "$.earthquake.hypocenter.magnitude[0].value",
-            "method": {
-                "code": 8,
-                "value": "P波/S波レベル越え、または仮定震源要素"
-            }
-        },
-        {
-            "type": "change",
-            "path": "$.earthquake.estimatedIntensity",
-            "reason": {
-                "code": -1,
-                "value": "不明"
-            },
-            "description": {
-                "code": 0,
-                "value": "ほとんど変化なし"
-            }
+          "identifier": "im.seis.magnitude.jma.mj",
+          "value": 1
         }
+      ]
+    },
+    "maxIntensity": {
+      "from": [
+        {
+          "identifier": "im.seis.intensity.jma.shindo",
+          "value": "4"
+        }
+      ],
+      "to": [
+        {
+          "identifier": "im.seis.intensity.jma.shindo",
+          "value": "4"
+        }
+      ]
+    },
+    "estimatedIntensity": [
+      {
+        "location": {
+          "type": "area",
+          "code": 741,
+          "name": "熊本県熊本"
+        },
+        "intensity": {
+          "from": [
+            {
+              "identifier": "im.seis.intensity.jma.shindo",
+              "value": "不明"
+            }
+          ],
+          "to": [
+            {
+              "identifier": "im.seis.intensity.jma.shindo",
+              "value": "4"
+            }
+          ]
+        },
+        "arrival": {
+          "time": 1460636799000,
+          "status": {
+            "code": 9,
+            "value": "主要動到達時刻の予測なし（PLUM法による予測）"
+          }
+        },
+        "isWarning": false
+      },
+      {
+        "location": {
+          "type": "area",
+          "code": 743,
+          "name": "熊本県天草・芦北"
+        },
+        "intensity": {
+          "from": [
+            {
+              "identifier": "im.seis.intensity.jma.shindo",
+              "value": "不明"
+            }
+          ],
+          "to": [
+            {
+              "identifier": "im.seis.intensity.jma.shindo",
+              "value": "4"
+            }
+          ]
+        },
+        "arrival": {
+          "time": 1460636799000,
+          "status": {
+            "code": 9,
+            "value": "主要動到達時刻の予測なし（PLUM法による予測）"
+          }
+        },
+        "isWarning": false
+      }
     ]
+  },
+  "accuracy": [
+    {
+      "type": "release",
+      "path": "$.earthquake.hypocenter.place.value",
+      "method": {
+        "code": 1,
+        "value": "P波/S波レベル越え、IPF法（1点）、または仮定震源要素"
+      }
+    },
+    {
+      "type": "release",
+      "path": "$.earthquake.hypocenter.location.depth",
+      "method": {
+        "code": 1,
+        "value": "P波/S波レベル越え、IPF法（1点）、または仮定震源要素"
+      }
+    },
+    {
+      "type": "release",
+      "path": "$.earthquake.hypocenter.magnitude[0].value",
+      "method": {
+        "code": 8,
+        "value": "P波/S波レベル越え、または仮定震源要素"
+      }
+    },
+    {
+      "type": "change",
+      "path": "$.earthquake.estimatedIntensity",
+      "reason": {
+        "code": -1,
+        "value": "不明"
+      },
+      "description": {
+        "code": 0,
+        "value": "ほとんど変化なし"
+      }
+    }
+  ]
 }
