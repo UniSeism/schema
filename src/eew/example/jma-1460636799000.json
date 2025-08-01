@@ -1,7 +1,6 @@
 {
     "schema": {
-        "identifier": "im.seis.schema.eew",
-        "version": "0.0.1"
+        "identifier": "im.seis.schema.eew"
     },
     "report": {
         "serial": 2,
@@ -30,7 +29,7 @@
             "place": {
                 "code": 741,
                 "name": "熊本県熊本地方",
-                "landOrSea": "unknown"
+                "landOrSea": null
             },
             "location": {
                 "latitude": 32.9,
