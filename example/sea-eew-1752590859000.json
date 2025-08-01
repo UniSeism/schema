@@ -1,0 +1,62 @@
+{
+  "schema": {
+    "identifier": "im.seis.schema.eew",
+    "version": "0.0.1"
+  },
+  "report": {
+    "serial": 3,
+    "isCancel": null,
+    "isDrill": null,
+    "isExercise": null,
+    "isWarning": null,
+    "isFinal": null,
+    "issuer": {
+      "agency": {
+        "code": null,
+        "name": "四川省地震局"
+      },
+      "system": {
+        "code": null,
+        "name": "中国地震预警网（试运行）"
+      }
+    },
+    "time": 1752590859000
+  },
+  "earthquake": {
+    "id": "202507152247.0001",
+    "time": 1752590845000,
+    "hypocenter": {
+      "isEstimate": null,
+      "place": {
+        "code": null,
+        "name": "四川甘孜州雅江县",
+        "landOrSea": null
+      },
+      "location": {
+        "latitude": 29.432,
+        "longitude": 101.089,
+        "depth": null
+      },
+      "magnitude": [
+        {
+          "identifier": "im.seis.magnitude.gb.17740-2017",
+          "value": 4
+        }
+      ]
+    },
+    "maxIntensity": {
+      "from": [
+        {
+          "identifier": "im.seis.intensity.gb/t.17742-2020",
+          "value": 5.5
+        }
+      ],
+      "to": [
+        {
+          "identifier": "im.seis.intensity.gb/t.17742-2020",
+          "value": 5.5
+        }
+      ]
+    }
+  }
+}
