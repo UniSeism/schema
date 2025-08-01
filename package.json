@@ -1,0 +1,17 @@
+{
+    "name": "us-schema",
+    "type": "module",
+    "module": "index.ts",
+    "scripts": {
+        "format": "prettier --cache --write ."
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "prettier": "^3.6.2",
+        "prettier-plugin-organize-imports": "^4.2.0",
+        "prettier-plugin-packagejson": "^2.5.19"
+    },
+    "peerDependencies": {
+        "typescript": "^5"
+    }
+}
